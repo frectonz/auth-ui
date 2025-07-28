@@ -6,8 +6,10 @@
   "zshy": "./src/index.ts",
   "scripts": {
     "build": "zshy",
+    "lint": "biome lint",
+    "check": "biome check",
     "format": "biome format --write",
-    "lint": "biome lint"
+    "check:write": "biome check --write"
   },
   "license": "MIT",
   "dependencies": {
