@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      basecoat-css:
+        specifier: ^0.3.0
+        version: 0.3.0
       lit:
         specifier: ^3.3.1
         version: 3.3.1
@@ -399,6 +402,9 @@ packages:
   astral-regex@2.0.0:
     resolution: {integrity: sha512-Z7tMw1ytTXt5jqMcOP+OQteU1VuNK9Y02uuJtKQ1Sv69jXQKKg5cibLwGJow8yzZP+eAc18EmLGPal0bp36rvQ==}
     engines: {node: '>=8'}
+
+  basecoat-css@0.3.0:
+    resolution: {integrity: sha512-LUYMQCralO0zHe9uySUNGr6kuWrdiCa8CjRhxK1fBSz+uS1DOtu0sTFgBCTTT/3IzXqBiGvKOrS945+6UBIcOQ==}
 
   better-path-resolve@1.0.0:
     resolution: {integrity: sha512-pbnl5XzGBdrFU/wT4jqmJVPn2B6UHPBOhzMQkY/SPUPB6QtUXtmBHBIwCbXJol93mOpGMnQyP/+BB19q04xj7g==}
@@ -1283,6 +1289,8 @@ snapshots:
   array-union@2.1.0: {}
 
   astral-regex@2.0.0: {}
+
+  basecoat-css@0.3.0: {}
 
   better-path-resolve@1.0.0:
     dependencies:

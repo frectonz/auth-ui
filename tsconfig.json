@@ -1,26 +1,39 @@
 {
   "compilerOptions": {
-    "target": "ES2022",
+    // Environment setup & latest features
+    "lib": ["ESNext"],
+    "target": "es2020",
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "moduleDetection": "auto",
+    "jsx": "react-jsx",
     "experimentalDecorators": true,
-    "useDefineForClassFields": false,
-    "module": "ESNext",
-    "lib": ["ES2022", "DOM", "DOM.Iterable"],
-    "skipLibCheck": true,
 
-    /* Bundler mode */
-    "moduleResolution": "bundler",
+    // Bundler mode
     "allowImportingTsExtensions": true,
-    "verbatimModuleSyntax": true,
-    "moduleDetection": "force",
-    "noEmit": true,
+    "rewriteRelativeImportExtensions": true,
+    "verbatimModuleSyntax": false,
+    "allowJs": true,
 
-    /* Linting */
+    // Best practices
     "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "erasableSyntaxOnly": true,
+    "skipLibCheck": true,
     "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true
+    "noUncheckedIndexedAccess": true,
+    // "esModuleInterop": true,
+
+    // Some stricter flags (disabled by default)
+    "noUnusedLocals": true,
+    "noUnusedParameters": false,
+    "noPropertyAccessFromIndexSignature": false,
+
+    // Build options
+    "declaration": true,
+    "noEmit": false,
+    "emitDeclarationOnly": false,
+    "sourceMap": true,
+    "declarationMap": true,
+    "resolveJsonModule": true
   },
   "include": ["src"]
 }

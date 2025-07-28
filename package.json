@@ -5,8 +5,8 @@
   "description": "Web components based UI elements for common auth actions.",
   "zshy": "./src/index.ts",
   "scripts": {
-    "build": "tsc && zshy",
-    "build:css": "tailwindcss -i ./src/input.css -o ./dist/output.css",
+    "build": "pnpm build:css && zshy",
+    "build:css": "tailwindcss -i ./src/input.css -o ./src/output.css",
     "lint": "biome lint",
     "check": "biome check",
     "format": "biome format --write",
@@ -15,6 +15,7 @@
   },
   "license": "MIT",
   "dependencies": {
+    "basecoat-css": "^0.3.0",
     "lit": "^3.3.1"
   },
   "devDependencies": {
@@ -26,12 +27,7 @@
     "zshy": "^0.2.5"
   },
   "files": [
-    "**/*.js",
-    "**/*.mjs",
-    "**/*.cjs",
-    "**/*.d.ts",
-    "**/*.d.mts",
-    "**/*.d.cts"
+    "dist"
   ],
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
