@@ -1,6 +1,6 @@
 {
   "name": "auth-ui",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "type": "module",
   "description": "Web components based UI elements for common auth actions.",
   "zshy": "./src/index.ts",
