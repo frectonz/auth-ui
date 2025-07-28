@@ -25,13 +25,13 @@ jobs:
         run: nix flake check
 
       - name: Install dependencies
-        run: pnpm install
+        run: nix develop -c pnpm install
 
       - name: Run build
-        run: pnpm build
+        run: nix develop -c pnpm build
 
       - name: Run lint
-        run: pnpm lint
+        run: nix develop -c pnpm lint
 
       - name: Run check
-        run: pnpm check
+        run: nix develop -c pnpm check
