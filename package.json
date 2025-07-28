@@ -17,6 +17,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "^2.1.2",
+    "@changesets/cli": "^2.29.5",
     "typescript": "^5.8.3",
     "zshy": "^0.2.5"
   },
