@@ -10,9 +10,10 @@
     "includes": [
       "*.json",
       "src/**",
+      "ui-book/*.json",
       "ui-book/src/**",
       "ui-book/index.html",
-      "ui-book/*.json"
+      ".github/workflows/**"
     ]
   },
   "formatter": {
