@@ -13,7 +13,8 @@
       "ui-book/*.json",
       "ui-book/src/**",
       "ui-book/index.html",
-      ".github/workflows/**"
+      ".github/workflows/**",
+      "!src/output.css"
     ]
   },
   "formatter": {
