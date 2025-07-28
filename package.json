@@ -6,6 +6,7 @@
   "zshy": "./src/index.ts",
   "scripts": {
     "build": "tsc && zshy",
+    "build:css": "tailwindcss -i ./src/input.css -o ./dist/output.css",
     "lint": "biome lint",
     "check": "biome check",
     "format": "biome format --write",
@@ -19,6 +20,8 @@
   "devDependencies": {
     "@biomejs/biome": "^2.1.2",
     "@changesets/cli": "^2.29.5",
+    "@tailwindcss/cli": "^4.1.11",
+    "tailwindcss": "^4.1.11",
     "typescript": "^5.8.3",
     "zshy": "^0.2.5"
   },
