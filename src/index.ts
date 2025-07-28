@@ -1,7 +1,7 @@
-import {LitElement, css, html} from 'lit';
-import {customElement, property} from 'lit/decorators.js';
+import { LitElement, css, html } from "lit";
+import { customElement, property } from "lit/decorators.js";
 
-@customElement('simple-greeting')
+@customElement("simple-greeting")
 export class SimpleGreeting extends LitElement {
   // Define scoped styles right with your component, in plain CSS
   static styles = css`
@@ -12,11 +12,10 @@ export class SimpleGreeting extends LitElement {
 
   // Declare reactive properties
   @property()
-  name?: string = 'World';
+  name?: string = "World";
 
   // Render the UI as a function of component state
   render() {
     return html`<p>Hello, ${this.name}!</p>`;
   }
 }
-

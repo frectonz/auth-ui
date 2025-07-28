@@ -5,7 +5,9 @@
   "description": "Web components based UI elements for common auth actions.",
   "zshy": "./src/index.ts",
   "scripts": {
-    "build": "zshy"
+    "build": "zshy",
+    "format": "biome format --write",
+    "lint": "biome lint"
   },
   "license": "MIT",
   "dependencies": {
